@@ -4,7 +4,7 @@
 
 
 :root{
-	--main-color: black ;
+	--main-color:#111 ;
 }
 
 
@@ -35,7 +35,7 @@ body{
 
 section{
 	padding: 1rem 5%;
-	min-height: 100vh;
+	min-height: 90vh;
 
 }
 
@@ -252,7 +252,7 @@ header .follow a:hover{
 }
 
 .home .content .info{
-	font-size: 2.5rem;
+	font-size: 2rem;
 	color: #111;
 	padding: 1rem 0;
 }
@@ -267,32 +267,26 @@ header .follow a:hover{
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1.5rem;
-	padding-bottom: 2rem;
+	padding-bottom: 1rem;
 }
 
 .about .row-1 .content{
 	flex: 1 1 50rem;
 }
 
-.about .row-1 .content h3{
-	color: #333;
-	font-size: 3.5rem;
-
-}
 
 .about .row-1 .content p{
 	color: #666;
-	font-size: 1.5rem;
-	padding: 1rem 0;
+	font-size: 2rem;
+	padding: 0.5rem 0;
 }
 
 .about .row-1 .content .box-container{
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1.5rem;
-	padding: 1rem 0;
+	padding: 0.1rem 0;
 
-	
 }
 
 .about .row-1 .content .box-container .box{
@@ -303,6 +297,12 @@ header .follow a:hover{
 .about .row-1 .content .box-container .box span{
 	color: var(--main-color);
 }
+
+.about .row-1 .content .box-container .box ul{
+	font-size: 2rem;	
+    color: #666;
+}
+
 
 
 
@@ -350,20 +350,28 @@ header .follow a:hover{
 }
 
 .about .row-2 .skills .progress:nth-child(1) .bar span{
-	width: 95%;
+	width: 85%;
 }
 
 .about .row-2 .skills .progress:nth-child(2) .bar span{
-	width: 9%;
+	width: 60%;
 }
 
 .about .row-2 .skills .progress:nth-child(3) .bar span{
-	width: 5%;
+	width: 70%;
 }
 
 .about .row-2 .skills .progress:nth-child(4) .bar span{
+	width: 60%;
+}
+.about .row-2 .skills .progress:nth-child(5) .bar span{
+	width: 70%;
+}
+.about .row-2 .skills .progress:nth-child(6) .bar span{
 	width: 30%;
 }
+
+
 /*
 .about .row-2 .box-container{
 	flex: 1 1 40rem;
@@ -399,32 +407,84 @@ header .follow a:hover{
 
 */
 
-/* Write certification CSS 
+/*------------- Write certification CSS ----------------*/
+
+.certifications .certifications-container{
+	display: flex;
+	gap: .5rem;
+	flex-wrap: wrap;
+}
+
+.certifications .certifications-container .box-certification{
+	flex:1 1 25rem;
+	text-align: center;
+	padding: 1rem;
+	background: #fff;
+	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+	border-radius: 5rem;
+	margin-bottom: 1rem;
+
+}
+
+.certifications .certifications-container .box-certification::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -1rem;
+	height: 2rem;
+	width: 2rem;
+	border-radius: 20%;
+	background: var(--main-color);
+
+}
 
 
 
 
+.certifications .certifications-container .box-certification .content-certi{
+}
+
+.certifications .certifications-container .box-certification .content-certi span{
+	color: #fff;
+	font-size: 2.2rem;
+	background: var(--main-color);
+	border-radius: 50rem;
+	padding: .5rem 1rem;
+}
 
 
+.certifications .certifications-container .box-certification .content-certi h3{
+	font-size: 2rem;
+	padding: 1rem 0;
+	color: #111;
+}
+
+.certifications .certifications-container .box-certification .content-certi p{
+	font-size: 1.5rem;
+	color: #666;
+
+}
 
 
+/*---------Experience ---------*/
 
-*/
 
 .experience .box-container{
 	display: flex;
-	flex-wrap: wrap;
 	gap: .5rem;
+	flex-wrap: wrap;
 
 }
 
 .experience .box-container .box{
-	position: relative;
-	flex: 1 1 33rem;
-	border-left: 0.2rem solid var(--main-color);
-	padding-left: 2rem;
-	padding-right: 2rem;
-	padding-bottom: 2rem;
+	flex:1 1 25rem;
+	text-align: center;
+	padding: 1rem;
+	background: #fff;
+	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+	border-radius: 5rem;
+	margin-bottom: 1rem;
+
 }
 
 .experience .box-container .box::before{
@@ -440,34 +500,32 @@ header .follow a:hover{
 }
 
 .experience .box-container .box .content{
-	background: #fff;
-	padding: 2rem;
-	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-	border-radius: .5rem;
 }
 
 .experience .box-container .box .content span{
 	color: #fff;
-	font-size: 2rem;
+	font-size: 2.2rem;
 	background: var(--main-color);
 	border-radius: 50rem;
-	padding: 1.5rem 1rem;
+	padding: .5rem 1rem;
 }
 
-.experience .box-container .box .content h3{
-	font-size: 2.5rem;
-	padding: 2rem 0;
+/* h3 for experience */
+
+/*.experience .box-container .box .content h3{
+	font-size: 2rem;
+	padding: 1rem 0;
 	color: #111;
-
-
-
-}
+}*/
 
 .experience .box-container .box .content p{
+	padding: 1rem;
 	font-size: 1.5rem;
 	color: #666;
 
 }
+
+
 
 /* --- Contact ----*/
 
@@ -480,7 +538,7 @@ header .follow a:hover{
 .contact .icons-container .icons{
 	flex:1 1 25rem;
 	text-align: center;
-	padding: 4rem;
+	padding: 1rem;
 	background: #fff;
 	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
 	border-radius: 5rem;
@@ -506,6 +564,20 @@ header .follow a:hover{
 	color: #666;
 	font-size: 1.7rem;
 }
+
+.contact .iframe-container{
+	width: 800px;
+    height: 450px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+
+.iframe-container{
+
+	display: block;
+    border-style:none;
+}
+
 
 
 /* ------Footer -------*/
